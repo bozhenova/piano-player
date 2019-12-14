@@ -1,6 +1,24 @@
 "use strict";
 
 (function() {
+  const keys = document.querySelectorAll(".key");
+
+  keys.forEach(key => {
+    key.addEventListener("click", () => playNote(key));
+  });
+
+  function playNote(key) {
+    const noteAudio = document.getElementById(key.dataset.note);
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    key.style.backgroundColor = "teal";
+    noteAudio.addEventListener("ended", () => stopPlay(key));
+  }
+
+  function stopPlay(key) {
+    key.style.backgroundColor = "";
+  }
+
   let nextOne = document.getElementById("first-next-line");
   let nextTwo = document.getElementById("second-next-line");
   let nextThree = document.getElementById("third-next-line");
@@ -10,47 +28,6 @@
   nextTwo.hidden = true;
   nextThree.hidden = true;
   startOver.hidden = true;
-
-  const keys = [
-    "c-key",
-    "d-key",
-    "e-key",
-    "f-key",
-    "g-key",
-    "a-key",
-    "b-key",
-    "high-c-key",
-    "c-sharp-key",
-    "d-sharp-key",
-    "f-sharp-key",
-    "g-sharp-key",
-    "a-sharp-key"
-  ];
-
-  const notes = [];
-
-  keys.forEach(function(key) {
-    notes.push(document.getElementById(key));
-  });
-
-  function keyPlay(event) {
-    event.target.style.backgroundColor = "teal";
-  }
-
-  function keyReturn(event) {
-    event.target.style.backgroundColor = "";
-  }
-
-  function eventAssignment(note) {
-    note.onmousedown = function() {
-      keyPlay(event);
-    };
-    note.onmouseup = function() {
-      keyReturn(event);
-    };
-  }
-
-  notes.forEach(eventAssignment);
 
   // The first button
   nextOne.onclick = function() {

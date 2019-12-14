@@ -11,83 +11,97 @@
   <body>
     <p class="title">Piano Player</p>
     <p id="demo" class="demo">Follow the song below to play the piano.</p>
-    <section class="piano">
-      <section id="c-key" class="key">
-        <section class="keynote">C</section>
-      </section>
-      <section id="c-sharp-key" class="black-key">
-        <section class="black-keynote">C#</section>
-      </section>
-      <section id="d-key" class="key">
-        <section class="keynote">D</section>
-      </section>
-      <section id="d-sharp-key" class="black-key">
-        <section class="black-keynote">D#</section>
-      </section>
-      <section id="e-key" class="key">
-        <section class="keynote">E</section>
-      </section>
-      <section id="f-key" class="key">
-        <section class="keynote">F</section>
-      </section>
-      <section id="f-sharp-key" class="black-key">
-        <section class="black-keynote">F#</section>
-      </section>
-      <section id="g-key" class="key">
-        <section class="keynote">G</section>
-      </section>
-      <section id="g-sharp-key" class="black-key">
-        <section class="black-keynote">G#</section>
-      </section>
-      <section id="a-key" class="key">
-        <section class="keynote">A</section>
-      </section>
-      <section id="a-sharp-key" class="black-key">
-        <section class="black-keynote">A#</section>
-      </section>
-      <section id="b-key" class="key">
-        <section class="keynote">B</section>
-      </section>
-      <section id="high-c-key" class="key">
+    <div class="piano">
+      <div data-note="c-key" class="key white">
         <div class="keynote">C</div>
-      </section>
-    </section>
+      </div>
+      <div data-note="c-sharp-key" class="key black">
+        <div class="black-keynote">C#</div>
+      </div>
+      <div data-note="d-key" class="key white">
+        <div class="keynote">D</div>
+      </div>
+      <div data-note="d-sharp-key" class="key black">
+        <div class="black-keynote">D#</div>
+      </div>
+      <div data-note="e-key" class="key white">
+        <div class="keynote">E</div>
+      </div>
+      <div data-note="f-key" class="key white">
+        <div class="keynote">F</div>
+      </div>
+      <div data-note="f-sharp-key" class="key black">
+        <div class="black-keynote">F#</div>
+      </div>
+      <div data-note="g-key" class="key white">
+        <div class="keynote">G</div>
+      </div>
+      <div data-note="g-sharp-key" class="key black">
+        <div class="black-keynote">G#</div>
+      </div>
+      <div data-note="a-key" class="key white">
+        <div class="keynote">A</div>
+      </div>
+      <div data-note="a-sharp-key" class="key black">
+        <div class="black-keynote">A#</div>
+      </div>
+      <div data-note="b-key" class="key white">
+        <div class="keynote">B</div>
+      </div>
+      <div data-note="high-c-key" class="key white">
+        <div class="keynote">C</div>
+      </div>
+    </div>
 
-    <section id="lyrics" class="lyrics">
-      <section id="column-one" class="column">
-        <section id="word-one" class="word">HAP-</section>
-        <section id="letter-note-one" class="letter-note">G</section>
-      </section>
-      <section id="column-two" class="column">
-        <section id="word-two" class="word">PY</section>
-        <section id="letter-note-two" class="letter-note">G</section>
-      </section>
-      <section id="column-three" class="column">
-        <section id="word-three" class="word">BIRTH-</section>
-        <section id="letter-note-three" class="letter-note">A</section>
-      </section>
-      <section id="column-four" class="column">
-        <section id="word-four" class="word">DAY</section>
-        <section id="letter-note-four" class="letter-note">G</section>
-      </section>
-      <section id="column-five" class="column">
-        <section id="word-five" class="word">TO</section>
-        <section id="letter-note-five" class="letter-note">C</section>
-      </section>
-      <section id="column-six" class="column">
-        <section id="word-six" class="word">YOU</section>
-        <section id="letter-note-six" class="letter-note">B</section>
-      </section>
-      <section id="column-optional" class="column column-optional">
-        <section id="word-optional" class="word">END</section>
-        <section id="letter-note-optional" class="letter-note">A</section>
-      </section>
+  <audio id="c-key" src="notes/C.wav"></audio>
+  <audio id="c-sharp-key" src="notes/Db.mp3"></audio>
+  <audio id="d-key" src="notes/D.wav"></audio>
+  <audio id="d-sharp-key" src="notes/Eb.mp3"></audio>
+  <audio id="e-key" src="notes/E.wav"></audio>
+  <audio id="f-key" src="notes/F.wav"></audio>
+  <audio id="f-sharp-key" src="notes/Gb.mp3"></audio>
+  <audio id="g-key" src="notes/G.wav"></audio>
+  <audio id="g-sharp-key" src="notes/Ab.mp3"></audio>
+  <audio id="a-key" src="notes/A.wav"></audio>
+  <audio id="a-sharp-key" src="notes/Bb.wav"></audio>
+  <audio id="b-key" src="notes/B.wav"></audio>
+  <audio id="high-c-key" src="notes/C2.wav"></audio>
+
+    <div id="lyrics" class="lyrics">
+      <div id="column-one" class="column">
+        <div id="word-one" class="word">HAP-</div>
+        <div id="letter-note-one" class="letter-note">G</div>
+      </div>
+      <div id="column-two" class="column">
+        <div id="word-two" class="word">PY</div>
+        <div id="letter-note-two" class="letter-note">G</div>
+      </div>
+      <div id="column-three" class="column">
+        <div id="word-three" class="word">BIRTH-</div>
+        <div id="letter-note-three" class="letter-note">A</div>
+      </div>
+      <div id="column-four" class="column">
+        <div id="word-four" class="word">DAY</div>
+        <div id="letter-note-four" class="letter-note">G</div>
+      </div>
+      <div id="column-five" class="column">
+        <div id="word-five" class="word">TO</div>
+        <div id="letter-note-five" class="letter-note">C</div>
+      </div>
+      <div id="column-six" class="column">
+        <div id="word-six" class="word">YOU</div>
+        <div id="letter-note-six" class="letter-note">B</div>
+      </div>
+      <div id="column-optional" class="column column-optional">
+        <div id="word-optional" class="word">END</div>
+        <div id="letter-note-optional" class="letter-note">A</div>
+      </div>
 
       <button id="first-next-line" class="next-line-button">Line 2</button>
       <button id="second-next-line" class="next-line-button">Line 3</button>
       <button id="third-next-line" class="next-line-button">Line 4</button>
       <button id="fourth-next-line" class="next-line-button">Reset</button>
-    </section>
+    </div>
 
     <script src="main.js"></script>
   </body>

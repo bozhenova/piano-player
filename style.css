@@ -30,7 +30,7 @@ body {
   background-color: #fd4d3f;
   margin-top: 30px;
 }
-.key {
+.white {
   width: 30px;
   height: 200px;
   display: inline-block;
@@ -40,7 +40,7 @@ body {
   color: #141c3a;
   cursor: pointer;
 }
-.black-key {
+.black {
   width: 25px;
   height: 100px;
   display: inline-block;
