@@ -2,12 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Piano Play</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <p class="title">Piano Player</p>
-    <p id="demo">Follow the song below to play the piano.</p>
+    <p id="demo" class="demo">Follow the song below to play the piano.</p>
     <section class="piano">
       <section id="c-key" class="key">
         <section class="keynote">C</section>
@@ -50,40 +53,40 @@
       </section>
     </section>
 
-    <section id="lyrics">
-      <section id="column-one">
-        <section id="word-one">HAP-</section>
-        <section id="letter-note-one">G</section>
+    <section id="lyrics" class="lyrics">
+      <section id="column-one" class="column">
+        <section id="word-one" class="word">HAP-</section>
+        <section id="letter-note-one" class="letter-note">G</section>
       </section>
-      <section id="column-two">
-        <section id="word-two">PY</section>
-        <section id="letter-note-two">G</section>
+      <section id="column-two" class="column">
+        <section id="word-two" class="word">PY</section>
+        <section id="letter-note-two" class="letter-note">G</section>
       </section>
-      <section id="column-three">
-        <section id="word-three">BIRTH-</section>
-        <section id="letter-note-three">A</section>
+      <section id="column-three" class="column">
+        <section id="word-three" class="word">BIRTH-</section>
+        <section id="letter-note-three" class="letter-note">A</section>
       </section>
-      <section id="column-four">
-        <section id="word-four">DAY</section>
-        <section id="letter-note-four">G</section>
+      <section id="column-four" class="column">
+        <section id="word-four" class="word">DAY</section>
+        <section id="letter-note-four" class="letter-note">G</section>
       </section>
-      <section id="column-five">
-        <section id="word-five">TO</section>
-        <section id="letter-note-five">C</section>
+      <section id="column-five" class="column">
+        <section id="word-five" class="word">TO</section>
+        <section id="letter-note-five" class="letter-note">C</section>
       </section>
-      <section id="column-six">
-        <section id="word-six">YOU</section>
-        <section id="letter-note-six">B</section>
+      <section id="column-six" class="column">
+        <section id="word-six" class="word">YOU</section>
+        <section id="letter-note-six" class="letter-note">B</section>
       </section>
-      <section id="column-optional" class="column-optional">
-        <section id="word-optional">END</section>
-        <section id="letter-note-optional">A</section>
+      <section id="column-optional" class="column column-optional">
+        <section id="word-optional" class="word">END</section>
+        <section id="letter-note-optional" class="letter-note">A</section>
       </section>
 
-      <button id="first-next-line">Line 2</button>
-      <button id="second-next-line">Line 3</button>
-      <button id="third-next-line">Line 4</button>
-      <button id="fourth-next-line">Reset</button>
+      <button id="first-next-line" class="next-line-button">Line 2</button>
+      <button id="second-next-line" class="next-line-button">Line 3</button>
+      <button id="third-next-line" class="next-line-button">Line 4</button>
+      <button id="fourth-next-line" class="next-line-button">Reset</button>
     </section>
 
     <script src="main.js"></script>
