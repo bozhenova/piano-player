@@ -1,6 +1,5 @@
-"use strict";
-
-(function() {
+(function () {
+  "use strict";
   const keys = document.querySelectorAll(".key");
 
   keys.forEach(key => {
@@ -30,7 +29,7 @@
   startOver.hidden = true;
 
   // The first button
-  nextOne.onclick = function() {
+  nextOne.onclick = function () {
     nextTwo.hidden = false;
     nextOne.hidden = true;
     document.getElementById("letter-note-five").innerHTML = "D";
@@ -38,7 +37,7 @@
   };
 
   // The second button
-  nextTwo.onclick = function() {
+  nextTwo.onclick = function () {
     nextThree.hidden = false;
     nextTwo.hidden = true;
     document.getElementById("word-five").innerHTML = "DEAR";
@@ -51,7 +50,7 @@
   };
 
   // The third button
-  nextThree.onclick = function() {
+  nextThree.onclick = function () {
     startOver.hidden = false;
     nextThree.hidden = true;
     document.getElementById("word-one").innerHTML = "HAP-";
@@ -69,7 +68,7 @@
   };
 
   // The Reset button
-  startOver.onclick = function() {
+  startOver.onclick = function () {
     nextOne.hidden = false;
     startOver.hidden = true;
     document.getElementById("word-one").innerHTML = "HAP-";
