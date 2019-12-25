@@ -73,7 +73,7 @@ body {
   height: 240px;
   display: block;
   margin: 0 auto;
-  padding-left: 20px;
+  padding-left: 25px;
   margin-top: 50px;
   background-color: #fd4d3f;
 }
@@ -81,7 +81,7 @@ body {
   width: 90px;
   display: inline-block;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 37px;
 }
 .column-optional {
   display: none;
@@ -102,15 +102,19 @@ body {
   margin-left: 35px;
 }
 .next-line-button {
-  width: 80px;
-  height: 40px;
+  padding: 12px 15px;
   font-size: 16px;
-  position: absolute;
-  margin-top: 28px;
-  margin-left: 10px;
+  position: relative;
+  top: -40px;
+  left: 100px;
   border: none;
   background-color: #ffc63f;
   color: #141c3a;
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.next-line-button--positioned {
+  top: -40px;
+  left: 5px;
 }
